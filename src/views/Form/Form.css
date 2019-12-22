@@ -1,0 +1,36 @@
+.back-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10%;
+    border-radius: 50%;
+    padding: 1%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.form-group {
+    width: 80%;
+}
+
+.form-group input {
+    height: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1em;
+}
+
+.form-group button {
+    height: 80px;
+    background: rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+}
+
+.form-group button:focus {
+    outline: none;
+}
+
+.form-group input:focus {
+    outline: none;
+}
