@@ -1,0 +1,14 @@
+.User {
+    border: 2px solid green;
+    min-width: 20%; 
+    overflow: hidden;
+    margin: 25px;
+    flex: 1 auto;
+    height:250px;
+    background:#fff;
+    border: solid black;
+    border-color: black;
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
+}
