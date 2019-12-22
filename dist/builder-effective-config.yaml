@@ -1,0 +1,17 @@
+directories:
+  output: dist
+  buildResources: assets
+files:
+  - filter:
+      - build/**/*
+extraMetadata:
+  main: build/electron.js
+appId: makhmudjonInadullaev-Simple-Hotel-reservation-app
+linux:
+  target:
+    - deb
+    - snap
+    - rpm
+  category: Utility
+extends: react-cra
+electronVersion: 7.1.6
