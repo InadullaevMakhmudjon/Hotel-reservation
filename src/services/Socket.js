@@ -1,3 +1,3 @@
 import hotels from './Hotels';
-const socket = require('socket.io-client')('localhost:3031');
+const socket = require('socket.io-client')(process.env.REACT_APP_SERVER_URL);
 hotels(socket);
