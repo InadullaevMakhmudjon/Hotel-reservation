@@ -7,23 +7,40 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "concurrently": "^5.0.2",
-    "electron": "^7.1.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
     "socket.io-client": "^2.3.0",
     "wait-on": "^3.3.0"
+  },
+  "devDependencies": {
+    "electron": "^7.1.6",
+    "electron-builder": "^21.2.0"
   },
   "scripts": {
     "electron": "electron .",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "dist:linux": "electron-builder --linux",
     "eject": "react-scripts eject",
     "electron-dev": "concurrently \"BROWSER=none npm run start\" \"wait-on http://localhost:3000 && electron .\""
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "build": {
+    "appId": "makhmudjonInadullaev-Simple-Hotel-reservation-app",
+    "linux": {
+      "target": [
+        "deb",
+        "snap",
+        "rpm"
+      ],
+      "category": "Utility"
+    }
   },
   "browserslist": {
     "production": [
